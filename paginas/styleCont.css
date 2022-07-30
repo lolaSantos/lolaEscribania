@@ -10,9 +10,6 @@ body{
 }
 header{
     grid-area: header;
-    background-image: url(../IMAGEN/footer.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 100%;
     width: auto;
 }
@@ -44,25 +41,29 @@ footer{
 
 }
 .barraPags__menu li{
+    list-style: none;
     margin: 10px;
     padding: 10px;
+    
 }
 .barraPags__menu a{
     text-decoration: none;
     font-size: 1.2 ;
-    color: white;
+    color:grey;
 
 }
 .barraPags__menu a:hover{
-    color: black;
+    color: rgb(255, 222, 90);
+    background-color: rgb(164, 0, 0);
+    padding: 10px;
 }
 .barraPags__logo--titulo {
-    color: white;
+    color: rgb(113, 113, 113);
     font-size: 40px;
     font-weight: 100;
 }
 .barraPags__logo--subtitulo{
-    color: white;
+    color: gray;
     font-size: 20px;
     font-weight: 100;
     text-decoration: underline;
@@ -81,7 +82,7 @@ footer{
 form{
     width: 40vh;
     margin: auto ;
-    background:rgba(0,0,0,0.4);
+    background:rgba(126, 78, 12, 0.4);
     padding: 2vh 3vh;
     box-sizing: border-box;
     margin-top: 20px;
@@ -114,7 +115,7 @@ textarea{
 .listaContacto{   
     width: 40vh;
     margin: auto ;
-    background:rgba(0,0,0,0.4);
+    background:rgba(126, 78, 12, 0.4);
     padding: 2vh 3vh;
     box-sizing: border-box;
     margin-top: 50px;
@@ -148,11 +149,9 @@ ul{
 }
 @media(min-width: 600px){
     header{
-        background-image: url(../IMAGEN/footer2.jpg);
-        height: 150px;
-        width: 100%;
-        background-position: center;
-        background-size: cover;}
+        display: flex;
+        flex-direction: column;
+    }
     .barraPags{
         display: inline-flex;
         text-align: justify;
@@ -167,7 +166,7 @@ ul{
     .barraPags__menu a{
         text-decoration: none;
         font-size: 1.2 ;
-        color: white;
+
     }
     .listaContacto{
         width: 80vh;
