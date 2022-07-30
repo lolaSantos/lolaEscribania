@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    height: 100%; 
+}
+/* GRIDS */
+header{
+    grid-area: header;
+    background-image: url(../IMAGEN/footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: auto;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+.gridContainer{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header" 
+    "titulo"   
+    "main"
+    "footer";
+}
+/* FIN GRIDS */
+
+/* MENU */
+.barraPags{
+    padding: 30px;
+    text-align: center;
+
+}
+.barraPags__menu li{
+    margin: 10px;
+    padding: 10px;
+}
+.barraPags__menu a{
+    text-decoration: none;
+    font-size: 1.2 ;
+    color: white;
+
+}
+.barraPags__menu a:hover{
+    color: black;
+}
+.barraPags__logo--titulo {
+    color: white;
+    font-size: 40px;
+    font-weight: 100;
+}
+.barraPags__logo--subtitulo{
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    text-decoration: underline;
+}
+.titulo{
+    padding: 50px;
+    text-align: center;
+    text-decoration: underline;
+    grid-area: titulo;
+
+}
+
+/* FIN MENU */
+
+/* CARTAS */
+
+.cardContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicios{
+    margin: 30px;
+    font-size: 30px;
+    font-weight: 200;
+    text-decoration: underline;
+    display: flex;
+}
+.cardContainer .card{
+    width: 250px;
+    margin: 40px;
+    border-radius:6px;
+    overflow: hidden;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2, 2);
+    cursor: default;
+    transition: all 400ms ease;
+    text-align: center;
+}
+.cardContainer .card:hover{
+    transform: translateY(-10px);
+    box-shadow: 5px 12px 16px rgba(0, 0, 0, 0, 2);}
+.card img{
+    width: 100%;
+    height: 250px;
+}
+.card h4{
+    font-weight: 600;
+}
+.card p{
+    margin: 15px;
+    line-height: 1.5;
+    padding: 0 1rem;
+    font-size: 14px;
+    font-weight: 200;
+}
+.card a{
+    margin-bottom: 30;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+.card a:hover{
+    color: rgb(92, 165, 249);
+}
+
+/* FIN CARTAS */
+
+/* CUADRO */
+
+.encuadro{
+    width: 80%;
+    max-width: 1000px;
+    margin: 100px;
+    padding: 40px;
+    border: solid 1px gray;
+    align-items: center;
+}
+.encuadro__img{
+    height: 220px;
+    margin: 30px;
+    padding-bottom: 50px;
+    float: left;
+}
+.encuadro__titulo{
+    font-size: 40px;
+}
+.encuadro__parrafo{
+    font-size: 12px;
+}
+/* FIN CUADRO */
+.footer{
+   
+    background-color: black;
+    color: whitesmoke;
+    height: auto;
+    width: 100%;
+    font-size: 7px;
+    padding-top: 30px;
+}
+.footer__lista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+}
+.footer__lista li{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: capitalize;
+    line-height: 2rem;
+    margin-bottom: 10px;
+}
+.footer__wpp{
+    height: 10px;
+}
+@media(min-width: 600px){
+    header{
+        background-image: url(../IMAGEN/footer2.jpg);
+        height: 150px;
+        width: 100%;
+        background-position: center;
+        background-size: cover;}
+    .barraPags{
+        display: inline-flex;
+        text-align: justify;
+        padding: 30px;
+        justify-content: space-between;
+    }
+    .barraPags__menu li{
+        display: inline-block;
+        margin: 10px;
+        padding: 10px;
+    }
+    .barraPags__menu a{
+        text-decoration: none;
+        font-size: 1.2 ;
+        color: white;
+
+    }
+    .cardContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    } 
+}
