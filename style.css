@@ -156,7 +156,7 @@ footer{
     }
     @keyframes anime{
         0%{margin-top: 0;}
-        25%{}
+        25%{margin-top: 1;}
     }
     .cardContainer{
         display: flex;
