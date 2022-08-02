@@ -1,124 +1,120 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    height: 100%;
-    justify-content: center;  
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  height: 100%;
+  justify-content: center;
 }
-header{
-    grid-area: header;
-    height: 100%;
-    width: auto;
+header {
+  grid-area: header;
+  height: 100%;
+  width: auto;
 }
-main{
-    grid-area: main;
+main {
+  grid-area: main;
 }
-footer{
-    grid-area: footer;
+footer {
+  grid-area: footer;
 }
-.gridContainer{
-    display: grid;
-    gap: 10px;
-    grid-template-areas: 
-    "header"   
+.gridContainer {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "header"
     "main"
     "footer";
 }
-.barraPags{
-    padding: 30px;
-    text-align: center;
-
+.barraPags {
+  padding: 30px;
+  text-align: center;
 }
-.barraPags__menu li{
-    list-style: none;
-    margin: 10px;
-    padding: 10px;
-    
+.barraPags__menu li {
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
 }
-.barraPags__menu a{
-    text-decoration: none;
-    font-size: 1.2 ;
-    color:grey;
-
+.barraPags__menu a {
+  text-decoration: none;
+  font-size: 1.2;
+  color: grey;
 }
-.barraPags__menu a:hover{
-    color: rgb(255, 222, 90);
-    background-color: rgb(164, 0, 0);
-    padding: 10px;
+.barraPags__menu a:hover {
+  color: rgb(255, 222, 90);
+  background-color: rgb(164, 0, 0);
+  padding: 10px;
 }
 .barraPags__logo--titulo {
-    color: rgb(113, 113, 113);
-    font-size: 40px;
-    font-weight: 100;
+  color: rgb(113, 113, 113);
+  font-size: 40px;
+  font-weight: 100;
 }
-.barraPags__logo--subtitulo{
-    color: gray;
-    font-size: 20px;
-    font-weight: 100;
-    text-decoration: underline;
+.barraPags__logo--subtitulo {
+  color: gray;
+  font-size: 20px;
+  font-weight: 100;
+  text-decoration: underline;
 }
 div {
-    padding: 50px;
-    text-align: left;
+  padding: 50px;
+  text-align: left;
 }
-.textoInfo__texto{
-    letter-spacing: 0.9px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+.textoInfo__texto {
+  letter-spacing: 0.9px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.footer{
-   
-    background-color: black;
-    color: whitesmoke;
-    height: auto;
-    width: 100%;
-    font-size: 7px;
-    padding-top: 30px;
+.footer {
+  background-color: black;
+  color: whitesmoke;
+  height: auto;
+  width: 100%;
+  font-size: 7px;
+  padding-top: 30px;
 }
-.footer__lista{
+.footer__lista {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  list-style: none;
+  text-align: center;
+}
+.footer__lista li {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: capitalize;
+  line-height: 2rem;
+  margin-bottom: 10px;
+}
+.footer__wpp {
+  height: 10px;
+}
+@media (min-width: 600px) {
+  header {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    list-style: none;
-    text-align: center;
-}
-.footer__lista li{
+  }
+  .barraPags {
+    display: inline-flex;
+    text-align: justify;
+    padding: 30px;
+    justify-content: space-between;
+  }
+  .barraPags__menu li {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+  }
+  .barraPags__menu a {
     text-decoration: none;
-    font-size: 15px;
-    font-weight: 300;
-    text-transform: capitalize;
-    line-height: 2rem;
-    margin-bottom: 10px;
-}
-.footer__wpp{
-    height: 10px;
-}
-@media(min-width: 600px){
-    header{
-        display: flex;
-        flex-direction: column;
-    }
-    .barraPags{
-        display: inline-flex;
-        text-align: justify;
-        padding: 30px;
-        justify-content: space-between;
-    }
-    .barraPags__menu li{
-        display: inline-block;
-        margin: 10px;
-        padding: 10px;
-    }
-    .barraPags__menu a{
-        text-decoration: none;
-        font-size: 1.2 ;
-
-    }
-    .barraPags__logo{
-        margin: -6vh;
-        text-align: left;
-    }
+    font-size: 1.2;
+  }
+  .barraPags__logo {
+    margin: -6vh;
+    text-align: left;
+  }
 }
